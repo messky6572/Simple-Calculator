@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>simple calculator</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #445;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      body .box-luar {
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        align-items: center;
+      }
+
+      body .box {
+         width: 400px;
+         height: 490px;
+         border-radius: 24.9px;
+         background-color: whitesmoke;
+      }
+
+
+      body .judul {
+        text-align: center;
+        color: #555;
+      }
+
+      body .judul .no-same {
+        color: #444;
+      }
+
+      .input {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .input input {
+        text-align: center;
+        padding: 5.7px 29px;
+      }
+
+      body .note-luar {
+        display: flex;
+        justify-content: center;
+        margin-top: 17px;
+      }
+
+      body .input button {
+        padding: 5.7px 93px;
+      }
+
+      body .note {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        width: 160px;
+        height: 130px;
+        background-color: #ff00ff;
+        border: 2px #444 solid;
+        border-radius: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box-luar">
+      <div class="box">
+        <div class="box-dalam">
+          <h1 class="judul">
+            Welcome <span class="no-same">To</span> Simple Calculator
+          </h1>
+          <div class="input">
+            <input id="angka1" type="number" placeholder="angka pertama" />
+            <input id="operator" type="text" placeholder="operator | +-*/" />
+            <input id="angka2" type="number" placeholder="angka kedua" />
+            <button id="hitung">hitung!</button>
+            <input id="hasil" type="text" placeholder="hasil" readonly />
+          </div>
+          <div class="note-luar">
+            <div class="note">
+              <!--note-->
+              <p>
+                note!
+                <br />
+                / = dibagi
+                <br />
+                + = ditambah
+                <br />
+                - = dikurangi
+                <br />
+                * = dikali
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
